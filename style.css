@@ -1,0 +1,35 @@
+
+body{
+    background-color: rgb(23, 92, 5);
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    width: 100%;
+}
+.landing img{
+    width:100% ;
+    position: fixed;
+    z-index: -10;
+
+}
+.landing-txt{
+    font-family: "Comfortaa", sans-serif;
+    color: bisque   ;
+    font-size: 80px;
+    font-weight: bold   ;
+    position: absolute;
+    transform: translateY(3em);
+    padding: 10px;
+    
+}
+.slogan{
+    font-family:"Playwrite IT Moderna", cursive ;
+    color: White;
+    position: absolute;
+    font-size: 45px;
+    transform: translateY(8em);
+    padding: 10px;
+
+}
