@@ -230,5 +230,21 @@ button {
 .footer-right ul li a:hover {
     text-decoration: underline;
 }
-  
-  
+/* --------------------------------------About css--------------------------------------------- */
+.story{
+    display: flex;
+    background-color: #0a861b;
+}
+.story img{
+    border-radius: 20px;
+}
+.story-txt{
+    margin-left: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    color: #fff;
+}
+.huge{
+    font-size: 30px;
+    color: bisque;
+}
