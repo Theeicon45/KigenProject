@@ -1,9 +1,45 @@
 
 body{
-    background-color: rgb(23, 92, 5);
+    background-color: var(--color);
+    --color:#ffffff;
     margin: 0;
     padding: 0;
+    font-family: "Comfortaa", sans-serif;
 }
+nav {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            z-index: 100;
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            ;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+            font-size: 25px;
+            
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: bisque;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: var(--color);
+        }
 
 .landing{
     width: 100%;
@@ -33,3 +69,166 @@ body{
     padding: 10px;
 
 }
+
+button {
+    --color: #0a861b;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    transform: translateY(30em) translateX(35em);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #03bd2b;
+    transition: background 0s;
+   }
+   .landing-clause{
+    transform: translateY(40em);
+    display: flex;
+    
+    background-color: #fff;
+    align-items: Right;
+    
+    padding: 30px;
+
+   }
+   .landing-clause1{
+    transform: translateY(40em);
+    display: flex;
+    
+    background-color: bisque;
+    align-items: Right;
+    
+    padding: 30px;
+   }
+  
+   video{
+    width: 500px;
+    border-radius: 20px;
+   }
+   .txt{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 8em;
+    padding: 10px;
+    margin-left:20px ;
+   }
+   .txt1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 8em;
+    padding: 10px;
+    margin-right:20px ;
+   }
+   .smltxt{
+    font-size: 20px;
+    text-align: left;
+   }
+   .productsbtn{
+    margin-left: 20px;
+   }
+   .ref{
+    display: flex;
+    right: 0;
+    
+   }
+   .reff {
+    height: 40px;
+    width: 200px;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #2605e4, #db1515) 3;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background-color 3s ease 5s;
+    margin: 90px;
+}
+
+.reff:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 87, 36, 0.99);
+}
+
+.reff:active {
+    background: linear-gradient(to right, #2605e4, #db1515);
+    color: white;
+    box-shadow: 0 0 20px 10px rgba(255, 126, 95, 0.9);
+}
+ 
+ footer {
+    background-color: rgb(3, 68, 14);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 46vw;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    /* Adjust styling for left side of footer content */
+}
+
+.footer-right ul {
+    list-style-type: none;
+}
+
+.footer-right ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-right ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
+  
+  
