@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>title</title>
+    <title>About us</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
     <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li> <a href="blog.html"> Blog</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li> <a href="Products.html"> Products</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -32,10 +32,56 @@
         RadiantYou soon transformed into a full-fledged web app. Maya created a stunning, user-friendly interface while Elena curated scientifically-backed content. They collaborated with experts to offer a holistic approach to beauty and wellness.<br><br>
 
         Launching with the mission to redefine radiance, RadiantYou empowers individuals to embrace their natural beauty through personalized regimens, educational content, and a supportive community. Today, it stands as a beacon of innovation and tradition, celebrating unique beauty in all its forms.<br><br>
-</div>
+          </div>
         </div>
-        
-
-    </div>
+        <div id="blog">
+          <div class="blogstory">
+            <div class="slider-wrapper">
+              <!-- Radio buttons for slides -->
+              <input id="slide1" type="radio" name="slider" checked />
+              <input id="slide2" type="radio" name="slider" />
+              <input id="slide3" type="radio" name="slider" />
+              <input id="slide4" type="radio" name="slider" />
+              <input id="slide5" type="radio" name="slider" />
+      
+              <!-- Navigation dots -->
+              <div class="nav-dots">
+                  <label for="slide1" class="nav-dot"></label>
+                  <label for="slide2" class="nav-dot"></label>
+                  <label for="slide3" class="nav-dot"></label>
+                  <label for="slide4" class="nav-dot"></label>
+                  <label for="slide5" class="nav-dot"></label>
+              </div>
+      
+              <!-- Arrows -->
+              <div class="arrows">
+                  <label for="slide5" class="left-arrow"> < </label>
+                  <label for="slide1" class="left-arrow"> < </label>
+                  <label for="slide2" class="left-arrow"> < </label>
+                  <label for="slide3" class="left-arrow"> < </label>
+                  <label for="slide4" class="left-arrow"> < </label>
+      
+                  <label for="slide2" class="right-arrow"> > </label>
+                  <label for="slide3" class="right-arrow"> > </label>
+                  <label for="slide4" class="right-arrow"> > </label>
+                  <label for="slide5" class="right-arrow"> > </label>
+                  <label for="slide1" class="right-arrow"> > </label>
+              </div>
+      
+              <!-- Slides -->
+              <div class="slider">
+                  <div class="slides">
+                      <div class="slide"><img src="IMAGES/treatment 1.jpg" alt="Treatment 1"></div>
+                      <div class="slide"><img src="IMAGES/treatment2.jpg" alt="Treatment 2"></div>
+                      <div class="slide"><img src="IMAGES/treatment 3.jpg" alt="Treatment 3"></div>
+                      <div class="slide"><img src="IMAGES/treatment 4.jpg" alt="Treatment 4"></div>
+                      <div class="slide"><img src="IMAGES/treatment 5.jpg" alt="Treatment 5"></div>
+                  </div>
+              </div>
+          </div>
+      
+          </div>
+        </div>
+        <script src="script.js"></script>
   </body>
 </html>

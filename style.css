@@ -233,7 +233,7 @@ button {
 /* --------------------------------------About css--------------------------------------------- */
 .story{
     display: flex;
-    background-color: #0a861b;
+    background-color: #00470e;
 }
 .story img{
     border-radius: 20px;
@@ -247,4 +247,156 @@ button {
 .huge{
     font-size: 30px;
     color: bisque;
+}
+/* slider */
+.slider-wrapper {
+    position: relative;
+    max-width: 350px;
+    margin: 50px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.slider {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    width: 350px;
+    height: 500px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    
+}
+
+.nav-dot {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition: opacity 0.4s, transform 0.4s;
+    cursor: pointer;
+    
+}
+
+.nav-dot:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.nav-dot:active {
+    transform: scale(0.9);
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.left-arrow, .right-arrow {
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 10;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.left-arrow:active, .right-arrow:active {
+    transform: scale(0.9);
+}
+.left-arrow {
+    left: -60px; /* Adjust this value to move the left arrow further left */
+}
+
+.right-arrow {
+    right: -60px; /* Adjust this value to move the right arrow further right */
+}
+
+
+#slide1:checked ~ .slider .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slider .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slider .slides {
+    transform: translateX(-200%);
+}
+
+#slide4:checked ~ .slider .slides {
+    transform: translateX(-300%);
+}
+
+#slide5:checked ~ .slider .slides {
+    transform: translateX(-400%);
+}
+
+#slide1:checked ~ .nav-dots .nav-dot:nth-child(1),
+#slide2:checked ~ .nav-dots .nav-dot:nth-child(2),
+#slide3:checked ~ .nav-dots .nav-dot:nth-child(3),
+#slide4:checked ~ .nav-dots .nav-dot:nth-child(4),
+#slide5:checked ~ .nav-dots .nav-dot:nth-child(5) {
+    opacity: 1;
+}
+
+.left-arrow {
+    display: none;
+}
+
+.right-arrow {
+    display: none;
+}
+
+#slide1:checked ~ .arrows .left-arrow[for=slide5],
+#slide2:checked ~ .arrows .left-arrow[for=slide1],
+#slide3:checked ~ .arrows .left-arrow[for=slide2],
+#slide4:checked ~ .arrows .left-arrow[for=slide3],
+#slide5:checked ~ .arrows .left-arrow[for=slide4] {
+    display: block;
+}
+
+#slide1:checked ~ .arrows .right-arrow[for=slide2],
+#slide2:checked ~ .arrows .right-arrow[for=slide3],
+#slide3:checked ~ .arrows .right-arrow[for=slide4],
+#slide4:checked ~ .arrows .right-arrow[for=slide5],
+#slide5:checked ~ .arrows .right-arrow[for=slide1] {
+    display: block;
 }
