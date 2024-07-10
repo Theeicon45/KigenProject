@@ -6,6 +6,7 @@ body{
     padding: 0;
     font-family: "Comfortaa", sans-serif;
 }
+
 nav {
             position: absolute;
             top: 0;
@@ -41,9 +42,21 @@ nav {
         nav ul li a:hover {
             color: var(--color);
         }
+marquee{
+  color: #00470e;
+ position: absolute;
+font-size: 25px;
+margin-top: 24em;
+background-color: bisque;
+cursor: pointer;
+}
+.red{
+    color: red;
+}
 
 .landing{
     width: 100%;
+    margin-bottom: 300px;
 }
 .landing img{
     width:100% ;
@@ -56,7 +69,7 @@ nav {
     color: bisque   ;
     font-size: 80px;
     font-weight: bold   ;
-    position: absolute;
+    
     transform: translateY(3em);
     padding: 10px;
     
@@ -64,9 +77,9 @@ nav {
 .slogan{
     font-family:"Playwrite IT Moderna", cursive ;
     color: White;
-    position: absolute;
+    position: relative;
     font-size: 45px;
-    transform: translateY(8em);
+    transform: translateY(5em);
     padding: 10px;
 
 }
@@ -78,7 +91,7 @@ button {
     width: 8em;
     height: 2.6em;
     line-height: 2.5em;
-    margin: 20px;
+    margin: 41px;
     position: relative;
     overflow: hidden;
     border: 2px solid var(--color);
@@ -88,7 +101,7 @@ button {
     border-radius: 6px;
     font-weight: 500;
     color: var(--color);
-    transform: translateY(30em) translateX(35em);
+    transform: translateX(35em);
    }
    
    button:before {
@@ -121,7 +134,7 @@ button {
     transition: background 0s;
    }
    .landing-clause{
-    transform: translateY(40em);
+    
     display: flex;
     
     background-color: #fff;
@@ -131,7 +144,7 @@ button {
 
    }
    .landing-clause1{
-    transform: translateY(40em);
+    
     display: flex;
     
     background-color: bisque;
@@ -202,7 +215,7 @@ button {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    margin-top: 46vw;
+    align-self: flex-end;
 }
 
 .footer-content {
@@ -434,6 +447,7 @@ input[type="radio"] {
     justify-content: center;
     margin-top:  50px; 
     background-color: bisque;
+    position:relative;
 
     
 }
@@ -542,10 +556,12 @@ input[type="radio"] {
 
 .product-links {
     text-align: right;
+    
+    
 }
 
 .product-links a {
-    display: inline-block;
+    /* display: inline-block; */
     margin-left: 5px;
     color: #e1e1e1;
     transition: 0.3s;
