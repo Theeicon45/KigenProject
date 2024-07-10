@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change</title>
+    <script>
+       function rndm_colour(){
+        var r= Math.floor(Math.random() * 256);
+        var g= Math.floor(Math.random() * 256);
+        var b = Math.floor(Math.random() * 256);
+        return color="rgb(" + r + "," + g + "," + b + ")";
+        return color=`rgb(${r},${g},${b})`;
+       }
+       function change_heading(){
+        let colour=rndm_colour();
+        document.getElementById("climate").style.color=colour;
+       }
+    </script>
+    <style>
+        #climate{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="climate"><a  onclick="change_heading(event)">Introduction to Climate Change</a></h1>
+</body>
+</html>
