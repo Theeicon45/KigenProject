@@ -575,7 +575,7 @@ input[type="radio"] {
 .container {
     
     margin: 0 auto;
-    background-color:transparent;
+    background-color:lightgoldenrodyellow;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -601,4 +601,32 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.working-hours {
+    margin: 20px;
+}
+
+.working-hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.working-hours th, .working-hours td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.working-hours th {
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+}
+
+.working-hours tr:nth-child(even) {
+    background-color: bisque;
+}
+.working-hours tr:nth-child(odd) {
+    color: bisque;
+}
+
 
